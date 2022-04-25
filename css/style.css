@@ -1,0 +1,113 @@
+body {
+  margin: 0px;
+  position: relative;
+}
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #cf1717;
+  position: fixed;
+  width: 100vw;
+}
+#navbar #logo {
+  display: flex;
+  align-items: center;
+}
+#navbar #logo img {
+  width: 60px;
+}
+#navbar ul {
+  text-decoration: none;
+  margin: 0px;
+  list-style: none;
+  display: flex;
+  margin-right: 10px;
+}
+#navbar ul li {
+  margin-right: 10px;
+  padding: 21px;
+}
+#navbar ul li:hover {
+  background-color: darkred;
+  font-weight: bold;
+}
+#navbar ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+#welcome-section {
+  height: 100vh;
+  background-image: url(../images/rohan-aggarwal-EShGwCZs3Nc-unsplash.jpg);
+}
+#welcome-section h1 {
+  text-align: center;
+  line-height: 60vh;
+  color: white;
+  font-size: 60px;
+  margin: 0px;
+  text-transform: capitalize;
+}
+#projects {
+  padding: 60px;
+  background-color: #eee;
+}
+#projects h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+#projects #main-con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 80px;
+}
+#projects #main-con #project-tile {
+  margin: 0px;
+  margin: 0px;
+  overflow: hidden;
+  height: 200px;
+}
+#projects #main-con #project-tile a {
+  text-decoration: none;
+  color: #cf1717;
+  width: 150px;
+  margin: 0px;
+}
+#projects #main-con #project-tile #title {
+  background-color: #cf1717;
+  height: 60px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 50px;
+  transform: translateY(-50px);
+  border-radius: 6px;
+  color: white;
+  text-transform: capitalize;
+}
+#projects #main-con #project-tile:hover #title {
+  transform: translateY(-60px);
+}
+#projects #main-con #project-tile a img {
+  width: 200px;
+  border-radius: 6px;
+}
+@media (max-width: 700px) {
+  #projects #main-con {
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    margin-top: 80px;
+  }
+}
+footer {
+  background-color: #cf1717;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  font-size: 18px;
+  padding: 15px;
+}
